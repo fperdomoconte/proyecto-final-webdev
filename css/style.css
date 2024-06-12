@@ -1,0 +1,43 @@
+/*Typeface - all pages*/
+@font-face {
+  font-family: kanit-regular;
+  src: url(/assets/fonts/Kanit/Kanit-Regular.ttf);
+}
+@font-face {
+  font-family: kanit-bold;
+  src: url(/assets/fonts/Kanit/Kanit-Bold.ttf);
+}
+@font-face {
+  font-family: kanit-light;
+  src: url(/assets/fonts/Kanit/Kanit-Light.ttf);
+}
+header nav.navbar {
+  padding: 2rem 0 2rem 0;
+}
+header nav.navbar a.navbar-brand svg {
+  margin: 0 0 0.5rem 1rem;
+}
+header nav.navbar .navbar-toggler {
+  border: 0 solid black;
+  border-radius: 0;
+}
+header nav.navbar div#navbarText ul li {
+  margin: 0 0 0 1rem;
+}
+header nav.navbar div#navbarText ul li a {
+  font-family: "kanit-regular";
+  font-size: 1.2rem;
+  color: #202020;
+  font-weight: initial;
+}
+header nav.navbar div#navbarText ul li a:hover {
+  color: #1F4E95;
+}
+header nav.navbar div#navbarText span div.navbar__socials a img.social-networks-img {
+  object-fit: cover;
+  height: 1rem;
+  width: 1rem;
+  margin: 0 1rem 0 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
