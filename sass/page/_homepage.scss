@@ -1,0 +1,21 @@
+section.herobox__container {
+    background-image: url(../assets/images/beach-image.jpg);
+    background-size: cover;
+    height: $layout-main-height;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    div.herobox__title {
+        h1 {
+            @include font ('kanit-regular', $font-size-title, $color-accent-grey, initial);
+        }
+
+        h2 {
+            @include font ('kanit-light', $font-size-subtitle, $color-accent-grey, initial);
+        }
+
+    }
+}

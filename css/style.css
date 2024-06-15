@@ -1,3 +1,4 @@
+@import "../node_modules/animate.css/animate.css";
 /*Typeface - all pages*/
 @font-face {
   font-family: kanit-regular;
@@ -32,6 +33,29 @@ header nav.navbar div#navbarText ul li a {
 }
 header nav.navbar div#navbarText ul li a:hover {
   color: #1F4E95;
+}
+
+section.herobox__container {
+  background-image: url(../assets/images/beach-image.jpg);
+  background-size: cover;
+  height: 55rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+section.herobox__container div.herobox__title h1 {
+  font-family: "kanit-regular";
+  font-size: 7rem;
+  color: #202020;
+  font-weight: initial;
+}
+section.herobox__container div.herobox__title h2 {
+  font-family: "kanit-light";
+  font-size: 2.5rem;
+  color: #202020;
+  font-weight: initial;
 }
 
 .footer__container {
