@@ -1,16 +1,16 @@
 @import "../node_modules/animate.css/animate.css";
 /*Typeface - all pages*/
 @font-face {
-  font-family: kanit-regular;
-  src: url(/assets/fonts/Kanit/Kanit-Regular.ttf);
+  font-family: "kanit-regular";
+  src: url("/proyecto-final-webdev/assets/fonts/Kanit/Kanit-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: kanit-bold;
-  src: url(/assets/fonts/Kanit/Kanit-Bold.ttf);
+  font-family: "kanit-bold";
+  src: url("/proyecto-final-webdev/assets/fonts/Kanit/Kanit-Bold.ttf") format("truetype");
 }
 @font-face {
-  font-family: kanit-light;
-  src: url(/assets/fonts/Kanit/Kanit-Light.ttf);
+  font-family: "kanit-light";
+  src: url("/proyecto-final-webdev/assets/fonts/Kanit/Kanit-Light.ttf") format("truetype");
 }
 header nav.navbar {
   padding: 2rem 0 2rem 0;
