@@ -10,11 +10,11 @@ section.herobox__container {
 
     div.herobox__title {
         h1 {
-            @include font ('kanit-regular', $font-size-title, $color-accent-grey, initial);
+            @include font ('kanit-regular', $font-size-name, $color-accent-grey, initial);
         }
 
         h2 {
-            @include font ('kanit-light', $font-size-subtitle, $color-accent-grey, initial);
+            @include font ('kanit-light', $font-size-title, $color-accent-grey, initial);
         }
 
     }
