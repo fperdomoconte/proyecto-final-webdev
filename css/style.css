@@ -8,15 +8,15 @@
 /*Typeface - all pages*/
 @font-face {
   font-family: "kanit-regular";
-  src: url(/assets/fonts/Kanit/Kanit-Regular.ttf);
+  src: url(assets/fonts/Kanit/Kanit-Regular.ttf);
 }
 @font-face {
   font-family: "kanit-bold";
-  src: url(/assets/fonts/Kanit/Kanit-Bold.ttf);
+  src: url(assets/fonts/Kanit/Kanit-Bold.ttf);
 }
 @font-face {
   font-family: "kanit-light";
-  src: url(/assets/fonts/Kanit/Kanit-Light.ttf);
+  src: url(assets/fonts/Kanit/Kanit-Light.ttf);
 }
 header nav.navbar {
   padding: 2rem 0 2rem 0;
@@ -70,6 +70,9 @@ main section.services__container {
   grid-template-rows: 1fr 3fr;
   grid-template-areas: "services__title services__title" "services__list services__description";
 }
+main section.services__container div.services__title {
+  grid-area: services__title;
+}
 main section.services__container div.services__title h1 {
   font-family: "kanit-regular";
   font-size: 1.2rem;
@@ -81,6 +84,9 @@ main section.services__container div.services__title h3 {
   font-size: 2rem;
   color: #202020;
   font-weight: initial;
+}
+main section.services__container div.services__description {
+  grid-area: services__title;
 }
 main section.services__container div.services__description p {
   font-family: "kanit-light";
