@@ -1,12 +1,34 @@
 /* media queries */
 
 /* desktop */
-@media screen and (min-width:1025px) {
+@media screen and (min-width:1215px) {
     main.services__main {
         section.services__container--mobile {
             display: none;
         }
     }
+}
+
+@media screen and (min-width:1025px) and (max-width:1214px) {
+    main.services__main {
+        section.services__container--mobile {
+            display: none;
+        }
+    }
+
+    img.team__image {
+        height: 10rem !important;
+        width: 10rem !important;
+        margin: 1rem 0rem 0rem 2rem !important;
+    }
+
+    div.about__description {
+
+        p {
+            padding-right: 1rem !important;
+        }
+    }
+
 }
 
 /* tablet */
@@ -26,6 +48,7 @@
 
         }
     }
+
     main.services__main {
         height: auto;
 
@@ -34,6 +57,7 @@
         }
 
     }
+
     main.work__main {
         height: auto;
 
@@ -53,6 +77,43 @@
 
                 h3 {
                     padding-left: 2rem;
+                }
+            }
+        }
+    }
+
+    main.about__main {
+        height: auto;
+        section.about__container {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas:
+                "about__title"
+                "about__image"
+                "about__description";
+            height: auto;
+            margin: 3rem 15rem 1rem 15rem;
+
+            div.about__image{
+                justify-content: center;
+                align-items: center;
+
+                img.team__image {
+                    height: 15rem !important;
+                    width: 15rem !important;
+                    margin: 1rem !important;
+                }
+            }
+
+            div.about__title {
+                padding-top: 2rem;
+            }
+
+            div.about__description {
+
+                p {
+                    padding: 1rem;
+                    text-align: center;
                 }
             }
         }
@@ -77,6 +138,7 @@
 
         }
     }
+
     main.services__main {
         height: auto;
 
@@ -97,6 +159,7 @@
 
 
     }
+
     main.work__main {
         height: auto;
 
@@ -120,4 +183,48 @@
             }
         }
     }
+
+    main.about__main {
+        height: auto;
+        section.about__container {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas:
+                "about__title"
+                "about__image"
+                "about__description";
+            height: auto;
+            margin: 3rem 15rem 1rem 15rem;
+
+            div.about__image{
+                justify-content: center;
+                align-items: center;
+
+                img.team__image {
+                    height: 15rem !important;
+                    width: 15rem !important;
+                    margin: 1rem !important;
+                }
+            }
+
+            div.about__title {
+                padding-top: 2rem;
+                h1{
+                    padding-left: 1rem;          
+                }
+                h3{
+                    padding-left: 1rem; 
+                }
+            }
+
+            div.about__description {
+
+                p {
+                    padding: 1rem;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    
 }
