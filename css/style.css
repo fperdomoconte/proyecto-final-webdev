@@ -94,6 +94,13 @@ main.services__main section.services__container div.services__title {
   flex-direction: column;
   justify-content: center;
 }
+main.services__main section.services__container div.services__title a {
+  text-decoration: none;
+}
+main.services__main section.services__container div.services__title a:hover {
+  text-decoration: underline;
+  color: black;
+}
 main.services__main section.services__container div.services__title h1 {
   font-family: "kanit-regular";
   font-size: 1.5rem;
@@ -263,9 +270,9 @@ main.work__main section.work__container div.card a {
   font-size: 1.5rem;
   color: #202020;
   font-weight: initial;
-}
-main.work__main section.work__container div.card a:hover {
-  text-decoration: underline;
+  /*  &:hover {
+       text-decoration: underline;
+   } */
 }
 main.work__main section.work__container div.card p {
   font-family: "kanit-light";
@@ -400,7 +407,9 @@ main.contact__main section.contact__container div.contact__title h3 {
 }
 main.contact__main section.contact__container div.contact__map {
   grid-area: contact__map;
-  padding-left: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 main.contact__main section.contact__container div.contact__map iframe {
   height: 20rem;
@@ -438,7 +447,7 @@ main.contact__main section.contact__container div.contact-form__container input 
 }
 main.contact__main section.contact__container div.contact-form__container input.submit {
   width: 90%;
-  background-color: #6DC16B !important;
+  background-color: white !important;
 }
 main.contact__main section.contact__container div.contact-form__container input:autofill {
   border: 1px solid #6DC16B;
@@ -559,10 +568,20 @@ main.contact__main section.contact__container div.contact-form__container textar
     padding: 1rem;
     text-align: center;
   }
-  main.contact-main section.contact__container {
+  main.contact__main {
+    height: auto;
+  }
+  main.contact__main section.contact__container {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "contact__title" "contact__map" "contact-form__container";
+  }
+  main.contact__main section.contact__container div.contact__title {
+    padding-top: 2rem;
+  }
+  main.contact__main section.contact__container div.contact-form__container {
+    padding-right: 2rem;
+    padding-left: 5rem;
   }
 }
 /* mobile */
@@ -635,10 +654,30 @@ main.contact__main section.contact__container div.contact-form__container textar
     padding: 1rem;
     text-align: center;
   }
-  main.contact-main section.contact__container {
+  main.contact__main {
+    height: auto;
+  }
+  main.contact__main section.contact__container {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "contact__title" "contact__map" "contact-form__container";
+  }
+  main.contact__main section.contact__container div.contact__title {
+    padding-top: 2rem;
+  }
+  main.contact__main section.contact__container div.contact__title h1 {
+    padding-left: 1rem;
+  }
+  main.contact__main section.contact__container div.contact__title h3 {
+    padding-left: 1rem;
+  }
+  main.contact__main section.contact__container div.contact__map iframe {
+    height: 15rem;
+    width: 15rem;
+  }
+  main.contact__main section.contact__container div.contact-form__container {
+    padding-right: 0;
+    padding-left: 2rem;
   }
 }
 

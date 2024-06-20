@@ -120,7 +120,9 @@
         }
     }
 
-    main.contact-main {
+    main.contact__main {
+        height: auto;
+
         section.contact__container {
             grid-template-columns: 1fr;
             grid-template-rows: auto;
@@ -128,6 +130,15 @@
                 "contact__title"
                 "contact__map"
                 "contact-form__container";
+
+            div.contact__title {
+                padding-top: 2rem;
+            }
+
+            div.contact-form__container {
+                padding-right: 2rem;
+                padding-left: $layout-title-left-padding;
+            }
         }
     }
 }
@@ -242,7 +253,9 @@
         }
     }
 
-    main.contact-main {
+    main.contact__main {
+        height: auto;
+
         section.contact__container {
             grid-template-columns: 1fr;
             grid-template-rows: auto;
@@ -250,6 +263,31 @@
                 "contact__title"
                 "contact__map"
                 "contact-form__container";
+
+            div.contact__title {
+                padding-top: 2rem;
+
+                h1 {
+                    padding-left: 1rem;
+                }
+
+                h3 {
+                    padding-left: 1rem;
+                }
+            }
+
+            div.contact__map {
+
+                iframe {
+                    height: 15rem;
+                    width: 15rem;
+                }
+            }
+
+            div.contact-form__container {
+                padding-right: 0;
+                padding-left: 2rem;
+            }
         }
     }
 
