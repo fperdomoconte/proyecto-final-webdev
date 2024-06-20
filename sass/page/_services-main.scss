@@ -27,6 +27,15 @@ main.services__main {
             flex-direction: column;
             justify-content: center;
 
+            a {
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                    color:black;
+                }
+            }
+
             h1 {
                 @include font ('kanit-regular', $font-size-heading, $color-accent-grey, initial);
                 padding-left: $layout-title-left-padding;

@@ -41,7 +41,9 @@ main.contact__main {
 
         div.contact__map {
             grid-area: contact__map;
-            padding-left: $layout-title-left-padding;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
             iframe {
                 height: 20rem;
@@ -77,7 +79,7 @@ main.contact__main {
         
                 &.submit{
                     width: 90%;
-                    background-color: $color-accent-green !important;
+                    background-color: white !important;
                 }
 
                 &:autofill{
