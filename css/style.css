@@ -308,8 +308,6 @@ main.about__main section.about__container {
   grid-template-columns: 1fr 1.5fr;
   grid-template-rows: 1fr 3fr;
   grid-template-areas: "about__title about__title" "about__image about__description";
-  /* 
-  width: 100%; */
   height: auto;
   margin: 3rem 15rem 15rem 15rem;
   grid-gap: 1rem;
@@ -358,6 +356,97 @@ main.about__main section.about__container div.about__description p {
   color: #202020;
   font-weight: initial;
   padding-right: 5rem;
+}
+
+main.contact__main {
+  display: flex;
+  justify-content: center;
+  height: 55rem;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2de 100%);
+}
+main.contact__main section.contact__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 3fr;
+  grid-template-areas: "contact__title contact__title" "contact__map contact-form__container";
+  height: auto;
+  width: 80%;
+  margin: 5% 10%;
+  grid-gap: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f5f7fa;
+  border-left: 4px solid #202020;
+}
+main.contact__main section.contact__container div.contact__title {
+  grid-area: contact__title;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+main.contact__main section.contact__container div.contact__title h1 {
+  font-family: "kanit-regular";
+  font-size: 1.5rem;
+  color: #202020;
+  font-weight: initial;
+  padding-left: 5rem;
+}
+main.contact__main section.contact__container div.contact__title h3 {
+  font-family: "kanit-regular";
+  font-size: 2rem;
+  color: #202020;
+  font-weight: initial;
+  padding-left: 5rem;
+}
+main.contact__main section.contact__container div.contact__map {
+  grid-area: contact__map;
+  padding-left: 5rem;
+}
+main.contact__main section.contact__container div.contact__map iframe {
+  height: 20rem;
+  width: 20rem;
+}
+main.contact__main section.contact__container div.contact__map ul {
+  list-style-type: none;
+  margin-top: 2rem;
+}
+main.contact__main section.contact__container div.contact__map ul li {
+  text-decoration: none;
+  font-family: "kanit-regular";
+  font-size: 1rem;
+  color: #202020;
+  font-weight: initial;
+  line-height: 2rem;
+}
+main.contact__main section.contact__container div.contact-form__container {
+  grid-area: contact-form__container;
+  padding-right: 2rem;
+}
+main.contact__main section.contact__container div.contact-form__container label {
+  width: 5rem;
+}
+main.contact__main section.contact__container div.contact-form__container input {
+  margin-bottom: 0.5rem;
+  width: 90%;
+  justify-content: right;
+  border-radius: 0;
+  border: 0px solid black;
+  font-family: "kanit-light";
+  font-size: 0.8;
+  color: #202020;
+  font-weight: initial;
+}
+main.contact__main section.contact__container div.contact-form__container input.submit {
+  width: 90%;
+  background-color: #6DC16B !important;
+}
+main.contact__main section.contact__container div.contact-form__container input:autofill {
+  border: 1px solid #6DC16B;
+}
+main.contact__main section.contact__container div.contact-form__container textarea {
+  width: 90%;
+  border-radius: 0;
+  border: 0px solid black;
 }
 
 /* footer */
@@ -470,6 +559,11 @@ main.about__main section.about__container div.about__description p {
     padding: 1rem;
     text-align: center;
   }
+  main.contact-main section.contact__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "contact__title" "contact__map" "contact-form__container";
+  }
 }
 /* mobile */
 @media screen and (max-width: 768px) {
@@ -540,6 +634,11 @@ main.about__main section.about__container div.about__description p {
   main.about__main section.about__container div.about__description p {
     padding: 1rem;
     text-align: center;
+  }
+  main.contact-main section.contact__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "contact__title" "contact__map" "contact-form__container";
   }
 }
 

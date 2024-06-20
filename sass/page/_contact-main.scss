@@ -1,0 +1,95 @@
+main.contact__main {
+    display: flex;
+    justify-content: center;
+    height: $layout-main-height;
+    background-image: linear-gradient(135deg, $color-basic-grey 0%, $color-basic-green 100%);
+
+    section.contact__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 3fr;
+        grid-template-areas:
+            "contact__title contact__title"
+            "contact__map contact-form__container";
+
+        height: auto;
+        width: 80%;
+        margin: 5% 10%;
+        grid-gap: 1rem;
+
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: $color-basic-grey;
+        border-left: 4px solid $color-accent-grey;
+
+        div.contact__title {            
+            grid-area: contact__title;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+
+            h1 {
+                @include font ('kanit-regular', $font-size-heading, $color-accent-grey, initial);
+                padding-left: $layout-title-left-padding;
+            }
+
+            h3 {
+                @include font ('kanit-regular', $font-size-subtitle, $color-accent-grey, initial);
+                padding-left: $layout-title-left-padding;
+            }
+        }
+
+        div.contact__map {
+            grid-area: contact__map;
+            padding-left: $layout-title-left-padding;
+
+            iframe {
+                height: 20rem;
+                width: 20rem;                
+            }
+
+            ul {
+                list-style-type: none;
+                margin-top: 2rem;
+                li {
+                    text-decoration: none;
+                    @include font ('kanit-regular', $font-size-card, $color-accent-grey, initial);
+                    line-height: 2rem;
+                }
+            } 
+        }
+
+        div.contact-form__container {            
+            grid-area: contact-form__container;
+            padding-right: 2rem;
+
+            label{
+                width: 5rem;
+            }
+
+            input {
+                margin-bottom: 0.5rem;
+                width: 90%;
+                justify-content: right;
+                border-radius: 0;
+                border: 0px solid black;
+                @include font ('kanit-light', 0.8, $color-accent-grey, initial);
+        
+                &.submit{
+                    width: 90%;
+                    background-color: $color-accent-green !important;
+                }
+
+                &:autofill{
+                    border: 1px solid $color-accent-green;
+                }
+            }
+
+            textarea{
+                width: 90%;
+                border-radius: 0;
+                border: 0px solid black;
+            }
+        }
+    }
+}
