@@ -14,11 +14,11 @@ main.services__main {
             "services__title services__title"
             "services__list services__description";
         width: 100%;
-            margin: 3rem 15rem 15rem 15rem;     
+        margin: 3rem 15rem 15rem 15rem;
         grid-gap: 1rem;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         background-color: $color-basic-grey;
-        border-left: 4px solid $color-accent-grey;  
+        border-left: 4px solid $color-accent-grey;
 
         div.services__title {
             grid-area: services__title;
@@ -53,7 +53,7 @@ main.services__main {
             /* padding-top: 3rem; */
 
             ul {
-                list-style:square;
+                list-style: square;
                 padding-left: $layout-title-left-padding;
 
                 li {

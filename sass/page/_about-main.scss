@@ -1,0 +1,67 @@
+main.about__main {
+    display: flex;
+    justify-content: center;
+    height: $layout-main-height;
+    background-image: url(../assets/images/drone-image.jpg);
+    background-size: cover;
+
+    section.about__container {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        grid-template-rows: 1fr 3fr;
+        grid-template-areas:
+            "about__title about__title"
+            "about__image about__description";
+        /* 
+        width: 100%; */
+        height: auto;
+        margin: 3rem 15rem 15rem 15rem;
+        grid-gap: 1rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: $color-basic-grey;
+        border-left: 4px solid $color-accent-grey;
+
+        div.about__title {
+            grid-area: about__title;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+
+            h1 {
+                @include font ('kanit-regular', $font-size-heading, $color-accent-grey, initial);
+                padding-left: $layout-title-left-padding;
+            }
+
+            h3 {
+                @include font ('kanit-regular', $font-size-subtitle, $color-accent-grey, initial);
+                padding-left: $layout-title-left-padding;
+            }
+        }
+
+        div.about__image {
+            grid-area: about__image;
+            display: flex;    
+
+            img {
+                height: 20rem;
+                width: 20rem;
+                object-fit: cover;
+                margin: 1rem 0rem 0rem 5rem;
+                border-bottom-right-radius: 5rem;
+            }
+        }
+
+        div.about__description {
+            grid-area: about__description;
+
+            p {
+                @include font ('kanit-light', $font-size-p, $color-accent-grey, initial);
+                padding-right: 5rem;
+
+            }
+        }
+    }
+
+
+}
