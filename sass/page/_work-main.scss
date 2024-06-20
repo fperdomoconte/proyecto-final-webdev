@@ -1,0 +1,90 @@
+/* work main */
+main.work__main {
+    display: flex;
+    justify-content: center;
+    height: $layout-main-height;
+    background-image: url(../assets/images/forest-conservation2.jpg);    
+    background-size: cover;
+
+    section.work__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 3fr;
+        grid-template-areas:
+            "work__title work__title work__title"
+            "works-card1 works-card2 works-card3";
+            width: 100%;
+            margin: 3rem 15rem 7rem 15rem;
+        grid-gap: 2rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: $color-basic-grey;
+        border-left: 4px solid $color-accent-grey;
+        padding:0rem 2rem;
+
+
+        div.work__title {
+            grid-area: work__title;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 2rem;
+
+            h1 {
+                @include font ('kanit-regular', $font-size-heading, $color-accent-grey, initial);
+                padding-left: $layout-title-left-padding;
+            }
+
+            h3 {
+                @include font ('kanit-regular', $font-size-subtitle, $color-accent-grey, initial);
+                padding-left: $layout-title-left-padding;
+            }
+        }
+
+        div.card {
+            margin-bottom: 3rem;
+            height: 20 rem;
+            border-bottom: 5px solid black;
+            border-radius: 0;
+            justify-self: center;
+
+            a {
+                text-decoration: none;
+                @include font ('kanit-regular', $font-size-heading, $color-accent-grey, initial);
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            p {
+                @include font ('kanit-light', $font-size-card, $color-accent-grey, initial);
+                margin-top: 1rem;
+            }
+
+            h6.text-body-secondary {
+                @include font ('kanit-light', $font-size-card, $color-accent-blue !important, initial);
+                margin-top: 1rem;
+            }
+
+            img {
+                border-radius: 0;
+                object-fit: cover;
+                height: 12rem;
+            }
+
+            &.works-card1 {
+                grid-area: works-card1;
+            }
+
+            &.works-card2 {
+                grid-area: works-card2;
+            }
+
+            &.works-card3 {
+                grid-area: works-card3;
+            }
+        }
+    }
+
+}

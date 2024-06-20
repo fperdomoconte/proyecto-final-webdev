@@ -1,0 +1,123 @@
+/* media queries */
+
+/* desktop */
+@media screen and (min-width:1025px) {
+    main.services__main {
+        section.services__container--mobile {
+            display: none;
+        }
+    }
+}
+
+/* tablet */
+@media screen and (min-width:769px) and (max-width:1024px) {
+    section.herobox__container {
+        align-items: flex-start;
+        padding-top: 5rem;
+
+        div.herobox__title {
+            h1 {
+                margin-left: 1rem;
+            }
+
+            h2 {
+                margin-left: 1rem;
+            }
+
+        }
+    }
+    main.services__main {
+        height: auto;
+
+        section.services__container {
+            display: none;
+        }
+
+    }
+    main.work__main {
+        height: auto;
+
+        section.work__container {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas:
+                "work__title"
+                "works-card1" "works-card2" "works-card3";
+            height: auto;
+
+            div.work__title {
+
+                h1 {
+                    padding-left: 2rem;
+                }
+
+                h3 {
+                    padding-left: 2rem;
+                }
+            }
+        }
+    }
+}
+
+/* mobile */
+@media screen and (max-width:768px) {
+
+    section.herobox__container {
+        align-items: flex-start;
+        padding-top: 5rem;
+
+        div.herobox__title {
+            h1 {
+                margin-left: 1rem;
+            }
+
+            h2 {
+                margin-left: 1rem;
+            }
+
+        }
+    }
+    main.services__main {
+        height: auto;
+
+        section.services__container {
+            display: none;
+        }
+
+        section.services__container--mobile {
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "services__title--mobile"
+                "services-card1" "services-card2"
+                "services-card3" "services-card4"
+                "services-card5" "services-card6";
+
+            grid-gap: 1rem;
+        }
+
+
+    }
+    main.work__main {
+        height: auto;
+
+        section.work__container {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas:
+                "work__title"
+                "works-card1" "works-card2" "works-card3";
+            height: auto;
+
+            div.work__title {
+
+                h1 {
+                    padding-left: 2rem;
+                }
+
+                h3 {
+                    padding-left: 2rem;
+                }
+            }
+        }
+    }
+}

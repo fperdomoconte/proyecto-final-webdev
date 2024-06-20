@@ -1,23 +1,25 @@
 @import "../node_modules/animate.css/animate.css";
+/* reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: "kanit-light";
-  src: url(../assets/fonts/Kanit/Kanit-Light.ttf) format("truetype");
-}
-/*Typeface - all pages*/
+/* typography */
 @font-face {
   font-family: "kanit-regular";
   src: url(../assets/fonts/Kanit/Kanit-Regular.ttf) format("truetype");
 }
 @font-face {
+  font-family: "kanit-light";
+  src: url(../assets/fonts/Kanit/Kanit-Light.ttf) format("truetype");
+}
+@font-face {
   font-family: "kanit-bold";
   src: url(../assets/fonts/Kanit/Kanit-Bold.ttf) format("truetype");
 }
+/* header navbar */
 header nav.navbar {
   padding: 2rem 0 2rem 0;
 }
@@ -41,8 +43,9 @@ header nav.navbar div#navbarText ul li a:hover {
   color: #1F4E95;
 }
 
+/* homepage main */
 section.herobox__container {
-  background-image: url(//assets/images/beach-image.jpg);
+  background-image: url(../assets/images/beach-image.jpg);
   background-size: cover;
   height: 55rem;
   display: flex;
@@ -64,47 +67,236 @@ section.herobox__container div.herobox__title h2 {
   font-weight: initial;
 }
 
-main section.services__container {
+/* services main */
+main.services__main {
+  display: flex;
+  justify-content: center;
+  height: 55rem;
+  background-image: url(../assets/images/logistics-image.jpg);
+  background-size: cover;
+}
+main.services__main section.services__container {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1.5fr;
   grid-template-rows: 1fr 3fr;
   grid-template-areas: "services__title services__title" "services__list services__description";
+  width: 100%;
+  margin: 3rem 15rem 15rem 15rem;
+  grid-gap: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f5f7fa;
+  border-left: 4px solid #202020;
 }
-main section.services__container div.services__title {
+main.services__main section.services__container div.services__title {
   grid-area: services__title;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
 }
-main section.services__container div.services__title h1 {
+main.services__main section.services__container div.services__title h1 {
   font-family: "kanit-regular";
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #202020;
   font-weight: initial;
+  padding-left: 5rem;
 }
-main section.services__container div.services__title h3 {
+main.services__main section.services__container div.services__title h3 {
   font-family: "kanit-regular";
   font-size: 2rem;
   color: #202020;
   font-weight: initial;
+  padding-left: 5rem;
 }
-main section.services__container div.services__description {
-  grid-area: services__title;
+main.services__main section.services__container div.services__description {
+  grid-area: services__description;
 }
-main section.services__container div.services__description p {
-  font-family: "kanit-light";
-  font-size: 1rem;
-  color: #202020;
-  font-weight: initial;
-}
-main section.services__container div.services__list ul {
-  list-style: none;
-}
-main section.services__container div.services__list ul li a {
-  text-decoration: none;
+main.services__main section.services__container div.services__description p {
   font-family: "kanit-light";
   font-size: 1.2rem;
   color: #202020;
   font-weight: initial;
+  padding-right: 5rem;
+}
+main.services__main section.services__container div.services__list {
+  grid-area: services__list;
+  /* padding-top: 3rem; */
+}
+main.services__main section.services__container div.services__list ul {
+  list-style: square;
+  padding-left: 5rem;
+}
+main.services__main section.services__container div.services__list ul li {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+main.services__main section.services__container div.services__list ul li a {
+  text-decoration: none;
+  font-family: "kanit-regular";
+  font-size: 1.2rem;
+  color: #202020;
+  font-weight: initial;
+  line-height: 1rem;
+}
+main.services__main section.services__container div.services__list ul li a:hover {
+  color: #1F4E95;
+}
+main.services__main section.services__container div.services__list ul li a.current-page {
+  text-decoration: underline;
+}
+main.services__main section.services__container--mobile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "services__title--mobile services__title--mobile" "services-card1 services-card2" "services-card3 services-card4" "services-card5 services-card6";
+  margin-top: 2rem;
+  grid-gap: 2rem;
+}
+main.services__main section.services__container--mobile div.services__title--mobile {
+  grid-area: services__title--mobile;
+}
+main.services__main section.services__container--mobile div.services__title--mobile h1 {
+  font-family: "kanit-regular";
+  font-size: 1.5rem;
+  color: #202020;
+  font-weight: initial;
+}
+main.services__main section.services__container--mobile div.services-card1 {
+  grid-area: services-card1;
+}
+main.services__main section.services__container--mobile div.services-card2 {
+  grid-area: services-card2;
+}
+main.services__main section.services__container--mobile div.services-card3 {
+  grid-area: services-card3;
+}
+main.services__main section.services__container--mobile div.services-card4 {
+  grid-area: services-card4;
+}
+main.services__main section.services__container--mobile div.services-card5 {
+  grid-area: services-card5;
+}
+main.services__main section.services__container--mobile div.services-card6 {
+  grid-area: services-card6;
+}
+main.services__main section.services__container--mobile div.card {
+  margin: 0 0 1rem 0;
+  height: 20rem;
+  border-top: 5px solid black;
+  border-radius: 0;
+}
+main.services__main section.services__container--mobile div.card div.card-body a {
+  text-decoration: none;
+  font-family: "kanit-regular";
+  font-size: 1.5rem;
+  color: #202020;
+  font-weight: initial;
+}
+main.services__main section.services__container--mobile div.card div.card-body p {
+  font-family: "kanit-light";
+  font-size: 1rem;
+  color: #202020;
+  font-weight: initial;
+  margin-top: 1rem;
+}
+main.services__main section.services__container--mobile div.card div.card-body h6.text-body-secondary {
+  font-family: "kanit-light";
+  font-size: 1rem;
+  color: #1F4E95 !important;
+  font-weight: initial;
+  margin-top: 1rem;
 }
 
+/* work main */
+main.work__main {
+  display: flex;
+  justify-content: center;
+  height: 55rem;
+  background-image: url(../assets/images/forest-conservation2.jpg);
+  background-size: cover;
+}
+main.work__main section.work__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 3fr;
+  grid-template-areas: "work__title work__title work__title" "works-card1 works-card2 works-card3";
+  width: 100%;
+  margin: 3rem 15rem 7rem 15rem;
+  grid-gap: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f5f7fa;
+  border-left: 4px solid #202020;
+  padding: 0rem 2rem;
+}
+main.work__main section.work__container div.work__title {
+  grid-area: work__title;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 2rem;
+}
+main.work__main section.work__container div.work__title h1 {
+  font-family: "kanit-regular";
+  font-size: 1.5rem;
+  color: #202020;
+  font-weight: initial;
+  padding-left: 5rem;
+}
+main.work__main section.work__container div.work__title h3 {
+  font-family: "kanit-regular";
+  font-size: 2rem;
+  color: #202020;
+  font-weight: initial;
+  padding-left: 5rem;
+}
+main.work__main section.work__container div.card {
+  margin-bottom: 3rem;
+  height: 20 rem;
+  border-bottom: 5px solid black;
+  border-radius: 0;
+  justify-self: center;
+}
+main.work__main section.work__container div.card a {
+  text-decoration: none;
+  font-family: "kanit-regular";
+  font-size: 1.5rem;
+  color: #202020;
+  font-weight: initial;
+}
+main.work__main section.work__container div.card a:hover {
+  text-decoration: underline;
+}
+main.work__main section.work__container div.card p {
+  font-family: "kanit-light";
+  font-size: 1rem;
+  color: #202020;
+  font-weight: initial;
+  margin-top: 1rem;
+}
+main.work__main section.work__container div.card h6.text-body-secondary {
+  font-family: "kanit-light";
+  font-size: 1rem;
+  color: #1F4E95 !important;
+  font-weight: initial;
+  margin-top: 1rem;
+}
+main.work__main section.work__container div.card img {
+  border-radius: 0;
+  object-fit: cover;
+  height: 12rem;
+}
+main.work__main section.work__container div.card.works-card1 {
+  grid-area: works-card1;
+}
+main.work__main section.work__container div.card.works-card2 {
+  grid-area: works-card2;
+}
+main.work__main section.work__container div.card.works-card3 {
+  grid-area: works-card3;
+}
+
+/* footer */
 .footer__container {
   display: flex;
   flex-wrap: wrap;
@@ -133,6 +325,87 @@ main section.services__container div.services__list ul li a {
   height: 1.5rem;
   width: 1.5rem;
   margin: 0 1rem 0 1rem;
+}
+
+/* media queries */
+/* desktop */
+@media screen and (min-width: 1025px) {
+  main.services__main section.services__container--mobile {
+    display: none;
+  }
+}
+/* tablet */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  section.herobox__container {
+    align-items: flex-start;
+    padding-top: 5rem;
+  }
+  section.herobox__container div.herobox__title h1 {
+    margin-left: 1rem;
+  }
+  section.herobox__container div.herobox__title h2 {
+    margin-left: 1rem;
+  }
+  main.services__main {
+    height: auto;
+  }
+  main.services__main section.services__container {
+    display: none;
+  }
+  main.work__main {
+    height: auto;
+  }
+  main.work__main section.work__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "work__title" "works-card1" "works-card2" "works-card3";
+    height: auto;
+  }
+  main.work__main section.work__container div.work__title h1 {
+    padding-left: 2rem;
+  }
+  main.work__main section.work__container div.work__title h3 {
+    padding-left: 2rem;
+  }
+}
+/* mobile */
+@media screen and (max-width: 768px) {
+  section.herobox__container {
+    align-items: flex-start;
+    padding-top: 5rem;
+  }
+  section.herobox__container div.herobox__title h1 {
+    margin-left: 1rem;
+  }
+  section.herobox__container div.herobox__title h2 {
+    margin-left: 1rem;
+  }
+  main.services__main {
+    height: auto;
+  }
+  main.services__main section.services__container {
+    display: none;
+  }
+  main.services__main section.services__container--mobile {
+    grid-template-columns: 1fr;
+    grid-template-areas: "services__title--mobile" "services-card1" "services-card2" "services-card3" "services-card4" "services-card5" "services-card6";
+    grid-gap: 1rem;
+  }
+  main.work__main {
+    height: auto;
+  }
+  main.work__main section.work__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "work__title" "works-card1" "works-card2" "works-card3";
+    height: auto;
+  }
+  main.work__main section.work__container div.work__title h1 {
+    padding-left: 2rem;
+  }
+  main.work__main section.work__container div.work__title h3 {
+    padding-left: 2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

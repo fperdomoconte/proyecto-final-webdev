@@ -23,7 +23,7 @@
         <!-- navbar -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary justify-content-center">
             <div class="container-fluid">
-                <a class="navbar-brand nav-link active" href="#">
+                <a class="navbar-brand nav-link active" href="../index.html">
                     <!-- figma SVG -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="42" height="13" viewBox="0 0 42 13" fill="none">
                         <path
@@ -59,7 +59,7 @@
                             <a class="nav-link" href="#">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Work</a>
+                            <a class="nav-link" href="./work.html">Work</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">About</a>
@@ -73,8 +73,8 @@
         </nav>
     </header>
 
-    <main>
-        <!-- services main grid -->
+    <main class="services__main">
+        <!-- services main grid desktop-->
         <section class="services__container">
             <!-- services title -->
             <div class="services__title">
@@ -83,22 +83,92 @@
             </div>
             <!-- services description -->
             <div class="services__description">
-                <p>Our engineering consulting company offers services to tackle diverse environmental challenges.
-                    <br><br>We ensure projects meet regulations and sustainability goals through thorough impact
-                    evaluations. <br><br>Our expertise in data science provides insights for decision-making, and we
-                    specialize in hydrodynamic modeling to predict water flow and quality for resource management.
+                <p>Our engineering consulting company offers services to tackle diverse environmental challenges. <br>We
+                    ensure projects meet regulations and sustainability goals through thorough impact evaluations.
+                    <br><br>Our expertise in data science provides insights for decision-making, and we specialize in
+                    hydrodynamic modeling to predict water flow and quality for resource management.
                 </p>
             </div>
             <!-- services list -->
             <div class="services__list">
                 <ul>
-                    <li><a href="#">Environmental impact assessment</a></li>
+                    <li><a href="./services-eia.html">Environmental impact assessment</a></li>
                     <li><a href="#">Environmental data science</a></li>
                     <li><a href="#">Environmental engineering</a></li>
                     <li><a href="#">Air quality modeling</a></li>
                     <li><a href="#">Hydrodynamic modeling</a></li>
                     <li><a href="#">Remote sensing</a></li>
                 </ul>
+            </div>
+        </section>
+
+        <!-- services main grid mobile-->
+        <section class="services__container--mobile">
+            <!-- services title mobile -->
+            <div class="services__title--mobile">
+                <h1>Our services</h1>
+            </div>
+            <!-- services list cards -->
+            <div class="card services-card1" style="width: 18rem">
+                <div class="card-body">
+                    <a href="./services-eia.html" class="card-link">Environmental impact assessment</a>
+
+                    <p class="card-text">Comprehensive evaluations of potential environmental consequences for projects,
+                        ensuring compliance with regulations and sustainability goals</p>
+
+                    <h6 class="card-subtitle mb-2 text-body-secondary">#eia #compliance</h6>
+
+                </div>
+            </div>
+            <div class="card services-card2" style="width: 18rem;">
+                <div class="card-body">
+                    <a href="#" class="card-link">Environmental data science</a>
+
+                    <p class="card-text">Advanced data analysis and modeling techniques to interpret and visualize
+                        environmental data for informed decision-making.</p>
+
+                    <h6 class="card-subtitle mb-2 text-body-secondary">#datascience #environmentaldata</h6>
+                </div>
+            </div>
+            <div class="card services-card3" style="width: 18rem;">
+                <div class="card-body">
+                    <a href="#" class="card-link">Environmental engineering</a>
+
+                    <p class="card-text">Innovative solutions for mitigating environmental challenges, including waste
+                        management, pollution control, and sustainable infrastructure design.</p>
+
+                    <h6 class="card-subtitle mb-2 text-body-secondary">#environment #sustainability</h6>
+                </div>
+            </div>
+            <div class="card services-card4" style="width: 18rem;">
+                <div class="card-body">
+                    <a href="#" class="card-link">Air quality modeling</a>
+
+                    <p class="card-text">Detailed simulations and assessments of air pollution dispersion to help
+                        mitigate impacts on public health and the environment.</p>
+
+                    <h6 class="card-subtitle mb-2 text-body-secondary">#airquality #pollution</h6>
+                </div>
+            </div>
+            <div class="card services-card5" style="width: 18rem;">
+                <div class="card-body">
+                    <a href="#" class="card-link">Hydrodynamic modeling</a>
+
+                    <p class="card-text">Predictive modeling of water flow and quality in natural and engineered systems
+                        to support resource management and environmental protection.</p>
+
+                    <h6 class="card-subtitle mb-2 text-body-secondary">#hydrodynamics #waterflow #modelling</h6>
+                </div>
+            </div>
+            <div class="card services-card6" style="width: 18rem;">
+                <div class="card-body">
+                    <a href="#" class="card-link">Remote sensing</a>
+
+                    <p class="card-text">Utilizing satellite and aerial imagery to monitor and analyze environmental
+                        conditions, land use, and ecosystem health.</p>
+
+                    <h6 class="card-subtitle mb-2 text-body-secondary">#remotesensing #drone</h6>
+                </div>
             </div>
         </section>
     </main>
