@@ -536,6 +536,7 @@ main.contact__main section.contact__container div.contact-form__container textar
     grid-template-rows: auto;
     grid-template-areas: "work__title" "works-card1" "works-card2" "works-card3";
     height: auto;
+    margin: 3rem 4rem 1rem 4rem;
   }
   main.work__main section.work__container div.work__title h1 {
     padding-left: 2rem;
@@ -551,7 +552,7 @@ main.contact__main section.contact__container div.contact-form__container textar
     grid-template-rows: auto;
     grid-template-areas: "about__title" "about__image" "about__description";
     height: auto;
-    margin: 3rem 15rem 1rem 15rem;
+    margin: 3rem 4rem 1rem 4rem;
   }
   main.about__main section.about__container div.about__image {
     justify-content: center;
@@ -576,6 +577,7 @@ main.contact__main section.contact__container div.contact-form__container textar
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "contact__title" "contact__map" "contact-form__container";
+    margin: 3rem 4rem 1rem 4rem;
   }
   main.contact__main section.contact__container div.contact__title {
     padding-top: 2rem;
@@ -616,6 +618,7 @@ main.contact__main section.contact__container div.contact-form__container textar
     grid-template-rows: auto;
     grid-template-areas: "work__title" "works-card1" "works-card2" "works-card3";
     height: auto;
+    margin: 3rem 4rem 1rem 4rem;
   }
   main.work__main section.work__container div.work__title h1 {
     padding-left: 2rem;
@@ -631,7 +634,7 @@ main.contact__main section.contact__container div.contact-form__container textar
     grid-template-rows: auto;
     grid-template-areas: "about__title" "about__image" "about__description";
     height: auto;
-    margin: 3rem 15rem 1rem 15rem;
+    margin: 3rem 4rem 1rem 4rem;
   }
   main.about__main section.about__container div.about__image {
     justify-content: center;
@@ -662,6 +665,7 @@ main.contact__main section.contact__container div.contact-form__container textar
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "contact__title" "contact__map" "contact-form__container";
+    margin: 3rem 4rem 1rem 4rem;
   }
   main.contact__main section.contact__container div.contact__title {
     padding-top: 2rem;

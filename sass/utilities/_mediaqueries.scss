@@ -67,7 +67,8 @@
             grid-template-areas:
                 "work__title"
                 "works-card1" "works-card2" "works-card3";
-            height: auto;
+            height: auto;            
+            margin: 3rem 4rem 1rem 4rem;
 
             div.work__title {
 
@@ -92,8 +93,8 @@
                 "about__title"
                 "about__image"
                 "about__description";
-            height: auto;
-            margin: 3rem 15rem 1rem 15rem;
+            height: auto;            
+            margin: 3rem 4rem 1rem 4rem;
 
             div.about__image {
                 justify-content: center;
@@ -129,7 +130,8 @@
             grid-template-areas:
                 "contact__title"
                 "contact__map"
-                "contact-form__container";
+                "contact-form__container";                
+            margin: 3rem 4rem 1rem 4rem;
 
             div.contact__title {
                 padding-top: 2rem;
@@ -193,6 +195,8 @@
                 "work__title"
                 "works-card1" "works-card2" "works-card3";
             height: auto;
+            margin: 3rem 4rem 1rem 4rem;
+
 
             div.work__title {
 
@@ -218,7 +222,7 @@
                 "about__image"
                 "about__description";
             height: auto;
-            margin: 3rem 15rem 1rem 15rem;
+            margin: 3rem 4rem 1rem 4rem;
 
             div.about__image {
                 justify-content: center;
@@ -263,6 +267,7 @@
                 "contact__title"
                 "contact__map"
                 "contact-form__container";
+            margin: 3rem 4rem 1rem 4rem;
 
             div.contact__title {
                 padding-top: 2rem;
