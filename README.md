@@ -3,8 +3,7 @@
 
 🔭 This is the final work of the course that I'm following in Coderhouse.
 
-<h3 align="left"> <a>https://entregafinalfp.000webhostapp.com/</a></h3>
-[Link to site](https://www.ejemplo.com](https://entregafinalfp.000webhostapp.com)
+[Link to site] (https://www.ejemplo.com](https://entregafinalfp.000webhostapp.com)
 
 Cheers!
 
