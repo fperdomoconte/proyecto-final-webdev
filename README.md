@@ -1,7 +1,7 @@
 ﻿<h1 align="center">Hi 👋, I'm Florencia</h1>
-- 🌱 I’m currently learning **Web development**
+🌱 I’m currently learning **Web development**
 
-- 🔭 This is the final work of the course that I'm following in Coderhouse.
+🔭 This is the final work of the course that I'm following in Coderhouse.
 
 Cheers!
 
