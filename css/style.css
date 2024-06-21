@@ -368,7 +368,8 @@ main.contact__main {
   display: flex;
   justify-content: center;
   height: 55rem;
-  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2de 100%);
+  background-image: url(../assets/images/aerogen-image.jpg);
+  background-size: cover;
 }
 main.contact__main section.contact__container {
   display: grid;

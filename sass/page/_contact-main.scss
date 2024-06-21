@@ -2,7 +2,8 @@ main.contact__main {
     display: flex;
     justify-content: center;
     height: $layout-main-height;
-    background-image: linear-gradient(135deg, $color-basic-grey 0%, $color-basic-green 100%);
+    background-image: url(../assets/images/aerogen-image.jpg);
+    background-size: cover;
 
     section.contact__container {
         display: grid;
